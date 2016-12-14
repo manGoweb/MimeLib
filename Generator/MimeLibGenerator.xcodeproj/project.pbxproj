@@ -34,6 +34,7 @@
 		156C17541E020B3200101575 /* MimeType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MimeType.swift; sourceTree = "<group>"; };
 		156C17581E020B7F00101575 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		156C17591E020B7F00101575 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		156C175B1E0210CC00101575 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Package.swift; path = ../Package.swift; sourceTree = "<group>"; };
 		15FBD05F1E01F3CE00E75B63 /* MimeLibGenerator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MimeLibGenerator; sourceTree = BUILT_PRODUCTS_DIR; };
 		15FBD0621E01F3CE00E75B63 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		15FBD0691E01F41200E75B63 /* String+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Tools.swift"; sourceTree = "<group>"; };
@@ -64,6 +65,7 @@
 		15FBD0561E01F3CE00E75B63 = {
 			isa = PBXGroup;
 			children = (
+				156C175B1E0210CC00101575 /* Package.swift */,
 				156C17581E020B7F00101575 /* LICENSE */,
 				156C17591E020B7F00101575 /* README.md */,
 				156C17511E020B3200101575 /* Sources */,
