@@ -22,11 +22,16 @@ final class Updater {
         if let dotRange = fileContent.range(of: "!") {
             fileContent.removeSubrange(dotRange.lowerBound..<fileContent.endIndex)
         }
+        else {
+            fileContent = "//  Data has been extracted from an apache.org svn repository located on http://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types/n/n"
+            fileContent += "import Foundation\n\n\n"
+        }
         
-        fileContent += "\n\n"
+        fileContent += "!\n\n"
         fileContent += data
         
         try! fileContent.write(to: file, atomically: true, encoding: String.Encoding.utf8)
+        print("File \(file.path) has been generated!")
     }
     
 }
