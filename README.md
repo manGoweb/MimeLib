@@ -29,6 +29,6 @@ Please create an issue with a description of your problem or open a pull request
 -------
 MIT
 
-:poo: Author
+:poop: Author
 ------
 Ondrej Rafaj - http://www.mangoweb.cz/en, [@rafiki270](http://twitter.com/rafiki270)
