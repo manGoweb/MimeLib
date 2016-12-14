@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		156C17481E01FDA700101575 /* Mime+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156C17471E01FDA700101575 /* Mime+Tools.swift */; };
-		156C174A1E01FDBD00101575 /* Mime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156C17491E01FDBD00101575 /* Mime.swift */; };
-		156C174E1E02026400101575 /* MimeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156C174B1E01FDCD00101575 /* MimeType.swift */; };
 		156C17501E0206BB00101575 /* Updater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156C174F1E0206BB00101575 /* Updater.swift */; };
+		156C17551E020B3200101575 /* Mime+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156C17521E020B3200101575 /* Mime+Tools.swift */; };
+		156C17561E020B3200101575 /* Mime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156C17531E020B3200101575 /* Mime.swift */; };
+		156C17571E020B3200101575 /* MimeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156C17541E020B3200101575 /* MimeType.swift */; };
 		15FBD0631E01F3CE00E75B63 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FBD0621E01F3CE00E75B63 /* main.swift */; };
 		15FBD06A1E01F41200E75B63 /* String+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FBD0691E01F41200E75B63 /* String+Tools.swift */; };
 /* End PBXBuildFile section */
@@ -28,10 +28,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		156C17471E01FDA700101575 /* Mime+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Mime+Tools.swift"; sourceTree = "<group>"; };
-		156C17491E01FDBD00101575 /* Mime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mime.swift; sourceTree = "<group>"; };
-		156C174B1E01FDCD00101575 /* MimeType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MimeType.swift; sourceTree = "<group>"; };
 		156C174F1E0206BB00101575 /* Updater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Updater.swift; sourceTree = "<group>"; };
+		156C17521E020B3200101575 /* Mime+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Mime+Tools.swift"; sourceTree = "<group>"; };
+		156C17531E020B3200101575 /* Mime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mime.swift; sourceTree = "<group>"; };
+		156C17541E020B3200101575 /* MimeType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MimeType.swift; sourceTree = "<group>"; };
+		156C17581E020B7F00101575 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		156C17591E020B7F00101575 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		15FBD05F1E01F3CE00E75B63 /* MimeLibGenerator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MimeLibGenerator; sourceTree = BUILT_PRODUCTS_DIR; };
 		15FBD0621E01F3CE00E75B63 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		15FBD0691E01F41200E75B63 /* String+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Tools.swift"; sourceTree = "<group>"; };
@@ -48,21 +50,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		156C17461E01FD8900101575 /* MimeLib */ = {
+		156C17511E020B3200101575 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				156C17471E01FDA700101575 /* Mime+Tools.swift */,
-				156C17491E01FDBD00101575 /* Mime.swift */,
-				156C174B1E01FDCD00101575 /* MimeType.swift */,
+				156C17521E020B3200101575 /* Mime+Tools.swift */,
+				156C17531E020B3200101575 /* Mime.swift */,
+				156C17541E020B3200101575 /* MimeType.swift */,
 			);
-			name = MimeLib;
-			path = ../MimeLib;
+			name = Sources;
+			path = ../Sources;
 			sourceTree = "<group>";
 		};
 		15FBD0561E01F3CE00E75B63 = {
 			isa = PBXGroup;
 			children = (
-				156C17461E01FD8900101575 /* MimeLib */,
+				156C17581E020B7F00101575 /* LICENSE */,
+				156C17591E020B7F00101575 /* README.md */,
+				156C17511E020B3200101575 /* Sources */,
 				15FBD0611E01F3CE00E75B63 /* MimeLibGenerator */,
 				15FBD0601E01F3CE00E75B63 /* Products */,
 			);
@@ -146,11 +150,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				15FBD06A1E01F41200E75B63 /* String+Tools.swift in Sources */,
-				156C174A1E01FDBD00101575 /* Mime.swift in Sources */,
-				156C17481E01FDA700101575 /* Mime+Tools.swift in Sources */,
-				156C174E1E02026400101575 /* MimeType.swift in Sources */,
 				15FBD0631E01F3CE00E75B63 /* main.swift in Sources */,
 				156C17501E0206BB00101575 /* Updater.swift in Sources */,
+				156C17561E020B3200101575 /* Mime.swift in Sources */,
+				156C17551E020B3200101575 /* Mime+Tools.swift in Sources */,
+				156C17571E020B3200101575 /* MimeType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

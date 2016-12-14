@@ -63,7 +63,7 @@
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "&quot;$(SRCROOT)/../MimeLib/&quot;"
+            argument = "&quot;$(SRCROOT)/../Sources/&quot;"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>

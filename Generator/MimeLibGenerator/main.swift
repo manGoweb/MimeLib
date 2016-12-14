@@ -31,9 +31,11 @@ let dataString: String = try! String.init(contentsOf: url)
 
 var enumOutput: String = "public enum MimeType: String {\n"
 
-var switchOutput: String = "public class Mime {\n\n"
-switchOutput += "\tpublic static func get(fileExtension ext: String) -> MimeType? {\n"
-switchOutput += "\t\tswitch ext {\n"
+var getExtensionOutput: String = "\tpublic static func get(fileExtension ext: String) -> MimeType? {\n"
+getExtensionOutput += "\t\tswitch ext {\n"
+
+var getMimeOutput: String = "\tpublic static func fileExtension(forMime mime: String) -> String? {\n"
+getMimeOutput += "\t\tswitch mime {\n"
 
 var usedExtensions: [String] = []
 
@@ -72,31 +74,45 @@ for line: String in dataString.lines {
     
     enumOutput += "\tcase \(enumExt) = \"\(mime)\"\n"
     
-    switchOutput += "\t\tcase \"\(ext)\":\n"
-    switchOutput += "\t\t\treturn .\(enumExt)\n"
+    getExtensionOutput += "\t\tcase \"\(ext)\":\n"
+    getExtensionOutput += "\t\t\treturn .\(enumExt)\n"
+    
+    getMimeOutput += "\t\tcase \"\(mime)\":\n"
+    getMimeOutput += "\t\t\treturn \"\(ext)\"\n"
 }
 
 
 enumOutput += "}"
 
-switchOutput += "\t\tdefault:\n"
-switchOutput += "\t\t\treturn nil\n"
-switchOutput += "\t\t}\n"
-switchOutput += "\t}\n\n}\n"
+getExtensionOutput += "\t\tdefault:\n"
+getExtensionOutput += "\t\t\treturn nil\n"
+getExtensionOutput += "\t\t}\n"
+getExtensionOutput += "\t}\n\n"
+
+getMimeOutput += "\t\tdefault:\n"
+getMimeOutput += "\t\t\treturn nil\n"
+getMimeOutput += "\t\t}\n"
+getMimeOutput += "\t}\n\n"
+
+
+var mimeOutput: String = "public class Mime {\n\n"
+mimeOutput += getExtensionOutput
+mimeOutput += getMimeOutput
+mimeOutput += "}/n"
 
 if path.characters.count == 0 {
     print(enumOutput)
     print("\n\n\n")
-    print(switchOutput)
+    print(mimeOutput)
 }
 else {
-    var mimeUrl: URL = URL(fileURLWithPath: path)
-    mimeUrl.appendPathComponent("Mime.swift")
-    Updater.write(data: switchOutput, toFile: mimeUrl)
-    
     var enumUrl: URL = URL(fileURLWithPath: path)
     enumUrl.appendPathComponent("MimeType.swift")
     Updater.write(data: enumOutput, toFile: enumUrl)
+    
+    var mimeUrl: URL = URL(fileURLWithPath: path)
+    mimeUrl.appendPathComponent("Mime.swift")
+    Updater.write(data: mimeOutput, toFile: mimeUrl)
 }
 
 print("\nThank you for using MimeLibGenerator!\n\nOndrej Rafaj & team manGoweb UK! (http://www.mangoweb.cz/en)\n\n\n")
