@@ -17,19 +17,19 @@ extension String {
         return result
     }
     
-    subscript(i: Int) -> String {
+    func substr(_ i: Int) -> String {
         guard i >= 0 && i < characters.count else { return "" }
-        return String(self[index(startIndex, offsetBy: i)])
+        return String(self[self.index(self.startIndex, offsetBy: i)])
     }
     
-    subscript(range: CountableRange<Int>) -> String {
-        let lowerIndex = index(startIndex, offsetBy: max(0,range.lowerBound), limitedBy: endIndex) ?? endIndex
-        return self[lowerIndex..<(index(lowerIndex, offsetBy: range.upperBound - range.lowerBound, limitedBy: endIndex) ?? endIndex)]
+    func capitalizingFirstLetter() -> String {
+        let first = String(characters.prefix(1)).capitalized
+        let other = String(characters.dropFirst())
+        return first + other
     }
     
-    subscript(range: ClosedRange<Int>) -> String {
-        let lowerIndex = index(startIndex, offsetBy: max(0,range.lowerBound), limitedBy: endIndex) ?? endIndex
-        return self[lowerIndex..<(index(lowerIndex, offsetBy: range.upperBound - range.lowerBound + 1, limitedBy: endIndex) ?? endIndex)]
+    mutating func capitalizeFirstLetter() {
+        self = self.capitalizingFirstLetter()
     }
     
 }

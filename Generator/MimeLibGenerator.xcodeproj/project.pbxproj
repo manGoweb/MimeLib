@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		15FBD04D1E01EA0400E75B63 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FBD04C1E01EA0400E75B63 /* main.swift */; };
-		15FBD0551E01F08B00E75B63 /* String+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FBD0541E01F08B00E75B63 /* String+Tools.swift */; };
-		EB82E58FF55CD72AAA0CA140 /* Pods_MimeLibGenerator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0903AE6F0077927F23414D /* Pods_MimeLibGenerator.framework */; };
+		156C17481E01FDA700101575 /* Mime+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156C17471E01FDA700101575 /* Mime+Tools.swift */; };
+		156C174A1E01FDBD00101575 /* Mime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156C17491E01FDBD00101575 /* Mime.swift */; };
+		156C174E1E02026400101575 /* MimeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156C174B1E01FDCD00101575 /* MimeType.swift */; };
+		156C17501E0206BB00101575 /* Updater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156C174F1E0206BB00101575 /* Updater.swift */; };
+		15FBD0631E01F3CE00E75B63 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FBD0621E01F3CE00E75B63 /* main.swift */; };
+		15FBD06A1E01F41200E75B63 /* String+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FBD0691E01F41200E75B63 /* String+Tools.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		15FBD0471E01EA0400E75B63 /* CopyFiles */ = {
+		15FBD05D1E01F3CE00E75B63 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,82 +28,74 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		15FBD0491E01EA0400E75B63 /* MimeLibGenerator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MimeLibGenerator; sourceTree = BUILT_PRODUCTS_DIR; };
-		15FBD04C1E01EA0400E75B63 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		15FBD0541E01F08B00E75B63 /* String+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Tools.swift"; sourceTree = "<group>"; };
-		51E2BA80088C2AFBD0D45CEF /* Pods-MimeLibGenerator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MimeLibGenerator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MimeLibGenerator/Pods-MimeLibGenerator.debug.xcconfig"; sourceTree = "<group>"; };
-		CE0903AE6F0077927F23414D /* Pods_MimeLibGenerator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MimeLibGenerator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0E2634DBDD1AAA3CB6BB920 /* Pods-MimeLibGenerator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MimeLibGenerator.release.xcconfig"; path = "Pods/Target Support Files/Pods-MimeLibGenerator/Pods-MimeLibGenerator.release.xcconfig"; sourceTree = "<group>"; };
+		156C17471E01FDA700101575 /* Mime+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Mime+Tools.swift"; sourceTree = "<group>"; };
+		156C17491E01FDBD00101575 /* Mime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mime.swift; sourceTree = "<group>"; };
+		156C174B1E01FDCD00101575 /* MimeType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MimeType.swift; sourceTree = "<group>"; };
+		156C174F1E0206BB00101575 /* Updater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Updater.swift; sourceTree = "<group>"; };
+		15FBD05F1E01F3CE00E75B63 /* MimeLibGenerator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MimeLibGenerator; sourceTree = BUILT_PRODUCTS_DIR; };
+		15FBD0621E01F3CE00E75B63 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		15FBD0691E01F41200E75B63 /* String+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Tools.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		15FBD0461E01EA0400E75B63 /* Frameworks */ = {
+		15FBD05C1E01F3CE00E75B63 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB82E58FF55CD72AAA0CA140 /* Pods_MimeLibGenerator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		15FBD0401E01EA0400E75B63 = {
+		156C17461E01FD8900101575 /* MimeLib */ = {
 			isa = PBXGroup;
 			children = (
-				15FBD04B1E01EA0400E75B63 /* MimeLibGenerator */,
-				15FBD04A1E01EA0400E75B63 /* Products */,
-				4372A7372FD57092EA364361 /* Pods */,
-				B1BC29B55DF1567FC5F9C896 /* Frameworks */,
+				156C17471E01FDA700101575 /* Mime+Tools.swift */,
+				156C17491E01FDBD00101575 /* Mime.swift */,
+				156C174B1E01FDCD00101575 /* MimeType.swift */,
+			);
+			name = MimeLib;
+			path = ../MimeLib;
+			sourceTree = "<group>";
+		};
+		15FBD0561E01F3CE00E75B63 = {
+			isa = PBXGroup;
+			children = (
+				156C17461E01FD8900101575 /* MimeLib */,
+				15FBD0611E01F3CE00E75B63 /* MimeLibGenerator */,
+				15FBD0601E01F3CE00E75B63 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		15FBD04A1E01EA0400E75B63 /* Products */ = {
+		15FBD0601E01F3CE00E75B63 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				15FBD0491E01EA0400E75B63 /* MimeLibGenerator */,
+				15FBD05F1E01F3CE00E75B63 /* MimeLibGenerator */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		15FBD04B1E01EA0400E75B63 /* MimeLibGenerator */ = {
+		15FBD0611E01F3CE00E75B63 /* MimeLibGenerator */ = {
 			isa = PBXGroup;
 			children = (
-				15FBD04C1E01EA0400E75B63 /* main.swift */,
-				15FBD0541E01F08B00E75B63 /* String+Tools.swift */,
+				15FBD0691E01F41200E75B63 /* String+Tools.swift */,
+				15FBD0621E01F3CE00E75B63 /* main.swift */,
+				156C174F1E0206BB00101575 /* Updater.swift */,
 			);
 			path = MimeLibGenerator;
-			sourceTree = "<group>";
-		};
-		4372A7372FD57092EA364361 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				51E2BA80088C2AFBD0D45CEF /* Pods-MimeLibGenerator.debug.xcconfig */,
-				D0E2634DBDD1AAA3CB6BB920 /* Pods-MimeLibGenerator.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		B1BC29B55DF1567FC5F9C896 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				CE0903AE6F0077927F23414D /* Pods_MimeLibGenerator.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		15FBD0481E01EA0400E75B63 /* MimeLibGenerator */ = {
+		15FBD05E1E01F3CE00E75B63 /* MimeLibGenerator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 15FBD0501E01EA0400E75B63 /* Build configuration list for PBXNativeTarget "MimeLibGenerator" */;
+			buildConfigurationList = 15FBD0661E01F3CE00E75B63 /* Build configuration list for PBXNativeTarget "MimeLibGenerator" */;
 			buildPhases = (
-				832E321E4CB5E2BE31FB9360 /* [CP] Check Pods Manifest.lock */,
-				15FBD0451E01EA0400E75B63 /* Sources */,
-				15FBD0461E01EA0400E75B63 /* Frameworks */,
-				15FBD0471E01EA0400E75B63 /* CopyFiles */,
-				93CA5BF10FA96CFFC2EB492E /* [CP] Copy Pods Resources */,
+				15FBD05B1E01F3CE00E75B63 /* Sources */,
+				15FBD05C1E01F3CE00E75B63 /* Frameworks */,
+				15FBD05D1E01F3CE00E75B63 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -108,90 +103,61 @@
 			);
 			name = MimeLibGenerator;
 			productName = MimeLibGenerator;
-			productReference = 15FBD0491E01EA0400E75B63 /* MimeLibGenerator */;
+			productReference = 15FBD05F1E01F3CE00E75B63 /* MimeLibGenerator */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		15FBD0411E01EA0400E75B63 /* Project object */ = {
+		15FBD0571E01F3CE00E75B63 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "manGoweb UK Ltd";
 				TargetAttributes = {
-					15FBD0481E01EA0400E75B63 = {
+					15FBD05E1E01F3CE00E75B63 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 3R8ZGADY96;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 15FBD0441E01EA0400E75B63 /* Build configuration list for PBXProject "MimeLibGenerator" */;
+			buildConfigurationList = 15FBD05A1E01F3CE00E75B63 /* Build configuration list for PBXProject "MimeLibGenerator" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 15FBD0401E01EA0400E75B63;
-			productRefGroup = 15FBD04A1E01EA0400E75B63 /* Products */;
+			mainGroup = 15FBD0561E01F3CE00E75B63;
+			productRefGroup = 15FBD0601E01F3CE00E75B63 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				15FBD0481E01EA0400E75B63 /* MimeLibGenerator */,
+				15FBD05E1E01F3CE00E75B63 /* MimeLibGenerator */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		832E321E4CB5E2BE31FB9360 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		93CA5BF10FA96CFFC2EB492E /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MimeLibGenerator/Pods-MimeLibGenerator-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		15FBD0451E01EA0400E75B63 /* Sources */ = {
+		15FBD05B1E01F3CE00E75B63 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15FBD0551E01F08B00E75B63 /* String+Tools.swift in Sources */,
-				15FBD04D1E01EA0400E75B63 /* main.swift in Sources */,
+				15FBD06A1E01F41200E75B63 /* String+Tools.swift in Sources */,
+				156C174A1E01FDBD00101575 /* Mime.swift in Sources */,
+				156C17481E01FDA700101575 /* Mime+Tools.swift in Sources */,
+				156C174E1E02026400101575 /* MimeType.swift in Sources */,
+				15FBD0631E01F3CE00E75B63 /* main.swift in Sources */,
+				156C17501E0206BB00101575 /* Updater.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		15FBD04E1E01EA0400E75B63 /* Debug */ = {
+		15FBD0641E01F3CE00E75B63 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -239,7 +205,7 @@
 			};
 			name = Debug;
 		};
-		15FBD04F1E01EA0400E75B63 /* Release */ = {
+		15FBD0651E01F3CE00E75B63 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -279,9 +245,8 @@
 			};
 			name = Release;
 		};
-		15FBD0511E01EA0400E75B63 /* Debug */ = {
+		15FBD0671E01F3CE00E75B63 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 51E2BA80088C2AFBD0D45CEF /* Pods-MimeLibGenerator.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 3R8ZGADY96;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -289,9 +254,8 @@
 			};
 			name = Debug;
 		};
-		15FBD0521E01EA0400E75B63 /* Release */ = {
+		15FBD0681E01F3CE00E75B63 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D0E2634DBDD1AAA3CB6BB920 /* Pods-MimeLibGenerator.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 3R8ZGADY96;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -302,25 +266,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		15FBD0441E01EA0400E75B63 /* Build configuration list for PBXProject "MimeLibGenerator" */ = {
+		15FBD05A1E01F3CE00E75B63 /* Build configuration list for PBXProject "MimeLibGenerator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				15FBD04E1E01EA0400E75B63 /* Debug */,
-				15FBD04F1E01EA0400E75B63 /* Release */,
+				15FBD0641E01F3CE00E75B63 /* Debug */,
+				15FBD0651E01F3CE00E75B63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		15FBD0501E01EA0400E75B63 /* Build configuration list for PBXNativeTarget "MimeLibGenerator" */ = {
+		15FBD0661E01F3CE00E75B63 /* Build configuration list for PBXNativeTarget "MimeLibGenerator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				15FBD0511E01EA0400E75B63 /* Debug */,
-				15FBD0521E01EA0400E75B63 /* Release */,
+				15FBD0671E01F3CE00E75B63 /* Debug */,
+				15FBD0681E01F3CE00E75B63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 15FBD0411E01EA0400E75B63 /* Project object */;
+	rootObject = 15FBD0571E01F3CE00E75B63 /* Project object */;
 }
