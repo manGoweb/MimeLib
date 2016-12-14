@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		15FBD04D1E01EA0400E75B63 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FBD04C1E01EA0400E75B63 /* main.swift */; };
+		15FBD0551E01F08B00E75B63 /* String+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FBD0541E01F08B00E75B63 /* String+Tools.swift */; };
+		EB82E58FF55CD72AAA0CA140 /* Pods_MimeLibGenerator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0903AE6F0077927F23414D /* Pods_MimeLibGenerator.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		15FBD0491E01EA0400E75B63 /* MimeLibGenerator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MimeLibGenerator; sourceTree = BUILT_PRODUCTS_DIR; };
 		15FBD04C1E01EA0400E75B63 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		15FBD0541E01F08B00E75B63 /* String+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Tools.swift"; sourceTree = "<group>"; };
+		51E2BA80088C2AFBD0D45CEF /* Pods-MimeLibGenerator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MimeLibGenerator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MimeLibGenerator/Pods-MimeLibGenerator.debug.xcconfig"; sourceTree = "<group>"; };
+		CE0903AE6F0077927F23414D /* Pods_MimeLibGenerator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MimeLibGenerator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0E2634DBDD1AAA3CB6BB920 /* Pods-MimeLibGenerator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MimeLibGenerator.release.xcconfig"; path = "Pods/Target Support Files/Pods-MimeLibGenerator/Pods-MimeLibGenerator.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB82E58FF55CD72AAA0CA140 /* Pods_MimeLibGenerator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +50,8 @@
 			children = (
 				15FBD04B1E01EA0400E75B63 /* MimeLibGenerator */,
 				15FBD04A1E01EA0400E75B63 /* Products */,
+				4372A7372FD57092EA364361 /* Pods */,
+				B1BC29B55DF1567FC5F9C896 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,8 +67,26 @@
 			isa = PBXGroup;
 			children = (
 				15FBD04C1E01EA0400E75B63 /* main.swift */,
+				15FBD0541E01F08B00E75B63 /* String+Tools.swift */,
 			);
 			path = MimeLibGenerator;
+			sourceTree = "<group>";
+		};
+		4372A7372FD57092EA364361 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				51E2BA80088C2AFBD0D45CEF /* Pods-MimeLibGenerator.debug.xcconfig */,
+				D0E2634DBDD1AAA3CB6BB920 /* Pods-MimeLibGenerator.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B1BC29B55DF1567FC5F9C896 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE0903AE6F0077927F23414D /* Pods_MimeLibGenerator.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -69,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 15FBD0501E01EA0400E75B63 /* Build configuration list for PBXNativeTarget "MimeLibGenerator" */;
 			buildPhases = (
+				832E321E4CB5E2BE31FB9360 /* [CP] Check Pods Manifest.lock */,
 				15FBD0451E01EA0400E75B63 /* Sources */,
 				15FBD0461E01EA0400E75B63 /* Frameworks */,
 				15FBD0471E01EA0400E75B63 /* CopyFiles */,
+				93CA5BF10FA96CFFC2EB492E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -116,11 +145,45 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		832E321E4CB5E2BE31FB9360 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		93CA5BF10FA96CFFC2EB492E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MimeLibGenerator/Pods-MimeLibGenerator-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		15FBD0451E01EA0400E75B63 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15FBD0551E01F08B00E75B63 /* String+Tools.swift in Sources */,
 				15FBD04D1E01EA0400E75B63 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,6 +281,7 @@
 		};
 		15FBD0511E01EA0400E75B63 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51E2BA80088C2AFBD0D45CEF /* Pods-MimeLibGenerator.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 3R8ZGADY96;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -227,6 +291,7 @@
 		};
 		15FBD0521E01EA0400E75B63 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0E2634DBDD1AAA3CB6BB920 /* Pods-MimeLibGenerator.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 3R8ZGADY96;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -253,6 +318,7 @@
 				15FBD0521E01EA0400E75B63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
