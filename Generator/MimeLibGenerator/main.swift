@@ -98,7 +98,7 @@ getMimeOutput += "\t}\n\n"
 var mimeOutput: String = "public class Mime {\n\n"
 mimeOutput += getExtensionOutput
 mimeOutput += getMimeOutput
-mimeOutput += "}/n"
+mimeOutput += "}\n"
 
 if path.characters.count == 0 {
     print(enumOutput)
