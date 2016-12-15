@@ -117,6 +117,6 @@ else {
 
 print("\nThank you for using MimeLibGenerator!\n\nOndrej Rafaj & team manGoweb UK! (http://www.mangoweb.cz/en)\n\n\n")
 
-
+Example.run()
 
 

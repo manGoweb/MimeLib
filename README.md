@@ -19,6 +19,17 @@ If you want to generate files straight from the Xcode project, you have two opti
 .Package(url: "https://github.com/manGoweb/MimeLib.git", majorVersion: 1)
 ```
 
+## Usage
+
+Couple of examples:
+```swift
+Mime.fileExtension(forMime: "text/plain")                  // Prints: txt
+Mime.fileExtension(forMime: "application/octet-stream")    // Prints: bin
+Mime.get(fileExtension: "psd")!.rawValue                   // Prints: image/vnd.adobe.photoshop
+Mime.get(fileExtension: "ogg") ?? "nil result"             // Prints: nil result
+Mime.string(forPath: "/home/file.pdf")                     // Prints: application/pdf
+```
+
 ## Info
 
 :gift_heart: Contributing

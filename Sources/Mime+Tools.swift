@@ -11,12 +11,21 @@ import Foundation
 
 public extension Mime {
     
-    public static func string(forUrl url: URL) -> String? {
+    public static func get(fileUrl url: URL) -> MimeType? {
         let ext: String = url.pathExtension
         guard ext != "" else {
             return nil
         }
-        return Mime.get(fileExtension: ext)?.rawValue
+        return Mime.get(fileExtension: ext)
+    }
+    
+    public static func get(filePath path: String) -> MimeType? {
+        let url: URL = URL(fileURLWithPath: path)
+        return Mime.get(fileUrl: url)
+    }
+    
+    public static func string(forUrl url: URL) -> String? {
+        return Mime.get(fileUrl: url)?.rawValue
     }
     
     public static func string(forPath path: String) -> String? {
