@@ -17,6 +17,8 @@ If you want to generate files straight from the Xcode project, you have two opti
 
 ```swift
 .Package(url: "https://github.com/manGoweb/MimeLib.git", majorVersion: 1)
+// or
+.package(url: "https://github.com/manGoweb/MimeLib.git", .upToNextMajor("1.0.0")),
 ```
 
 ## Usage
