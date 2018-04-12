@@ -18,8 +18,8 @@ print("MimeLibGenerator starting ...\n")
 var path: String = ""
 
 var c = 0;
-for arg: String in CommandLine.arguments {
-    if c == 1 && arg.characters.count > 0 {
+for arg in CommandLine.arguments {
+    if c == 1 && arg.count > 0 {
         path = arg
         print("Export path set to: " + path)
     }
@@ -39,27 +39,22 @@ getMimeOutput += "\t\tswitch mime {\n"
 
 var usedExtensions: [String] = []
 
-for line: String in dataString.lines {
-    guard line.substr(0) != "#" else {
-        continue
-    }
-    
-    let parts: [String] = line.replacingOccurrences(of: "\\s+", with: " ", options: .regularExpression).trimmingCharacters(in: .whitespaces).components(separatedBy: " ")
-    let ext: String = parts[1].lowercased()
-    
+func handle(ext: String, mime: String) {
     guard usedExtensions.index(of: ext) == nil else {
-        continue
+        return
     }
+
     usedExtensions.append(ext)
-    
+
     var enumExt = ext
     if Int(ext.substr(0)) != nil || ext == "class" {
         enumExt = "_" + ext
     }
+
     if enumExt.contains("-") {
         let arr = ext.components(separatedBy: "-")
         var x = 0
-        for part: String in arr {
+        for part in arr {
             if x == 0 {
                 enumExt = part
             }
@@ -69,16 +64,34 @@ for line: String in dataString.lines {
             x += 1
         }
     }
-    
-    let mime: String = parts[0].lowercased()
-    
+
+
     enumOutput += "\tcase \(enumExt) = \"\(mime)\"\n"
-    
+
     getExtensionOutput += "\t\tcase \"\(ext)\":\n"
     getExtensionOutput += "\t\t\treturn .\(enumExt)\n"
-    
+
     getMimeOutput += "\t\tcase \"\(mime)\":\n"
     getMimeOutput += "\t\t\treturn \"\(ext)\"\n"
+}
+
+for line in dataString.lines {
+    guard line.substr(0) != "#" else {
+        continue
+    }
+    
+    let parts = line.replacingOccurrences(of: "\\s+", with: " ", options: .regularExpression)
+                    .trimmingCharacters(in: .whitespaces)
+                    .components(separatedBy: " ")
+
+    guard let mime = parts.first?.lowercased() else {
+        continue
+    }
+
+    let extensions = parts.dropFirst().map { $0.lowercased() }
+    for ext in extensions {
+        handle(ext: ext, mime: mime)
+    }
 }
 
 
@@ -100,7 +113,7 @@ mimeOutput += getExtensionOutput
 mimeOutput += getMimeOutput
 mimeOutput += "}\n"
 
-if path.characters.count == 0 {
+if path.count == 0 {
     print(enumOutput)
     print("\n\n\n")
     print(mimeOutput)

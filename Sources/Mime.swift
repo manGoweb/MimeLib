@@ -58,8 +58,6 @@ public class Mime {
 			return .exi
 		case "pfr":
 			return .pfr
-		case "woff":
-			return .woff
 		case "gml":
 			return .gml
 		case "gpx":
@@ -70,6 +68,8 @@ public class Mime {
 			return .stk
 		case "ink":
 			return .ink
+		case "inkml":
+			return .inkml
 		case "ipfix":
 			return .ipfix
 		case "jar":
@@ -98,6 +98,10 @@ public class Mime {
 			return .mrcx
 		case "ma":
 			return .ma
+		case "nb":
+			return .nb
+		case "mb":
+			return .mb
 		case "mathml":
 			return .mathml
 		case "mbox":
@@ -114,14 +118,40 @@ public class Mime {
 			return .mods
 		case "m21":
 			return .m21
+		case "mp21":
+			return .mp21
 		case "mp4s":
 			return .mp4s
 		case "doc":
 			return .doc
+		case "dot":
+			return .dot
 		case "mxf":
 			return .mxf
 		case "bin":
 			return .bin
+		case "dms":
+			return .dms
+		case "lrf":
+			return .lrf
+		case "mar":
+			return .mar
+		case "so":
+			return .so
+		case "dist":
+			return .dist
+		case "distz":
+			return .distz
+		case "pkg":
+			return .pkg
+		case "bpk":
+			return .bpk
+		case "dump":
+			return .dump
+		case "elc":
+			return .elc
+		case "deploy":
+			return .deploy
 		case "oda":
 			return .oda
 		case "opf":
@@ -132,6 +162,12 @@ public class Mime {
 			return .omdoc
 		case "onetoc":
 			return .onetoc
+		case "onetoc2":
+			return .onetoc2
+		case "onetmp":
+			return .onetmp
+		case "onepkg":
+			return .onepkg
 		case "oxps":
 			return .oxps
 		case "xer":
@@ -142,12 +178,16 @@ public class Mime {
 			return .pgp
 		case "asc":
 			return .asc
+		case "sig":
+			return .sig
 		case "prf":
 			return .prf
 		case "p10":
 			return .p10
 		case "p7m":
 			return .p7m
+		case "p7c":
+			return .p7c
 		case "p7s":
 			return .p7s
 		case "p8":
@@ -166,6 +206,10 @@ public class Mime {
 			return .pls
 		case "ai":
 			return .ai
+		case "eps":
+			return .eps
+		case "ps":
+			return .ps
 		case "cww":
 			return .cww
 		case "pskcxml":
@@ -214,6 +258,8 @@ public class Mime {
 			return .shf
 		case "smi":
 			return .smi
+		case "smil":
+			return .smil
 		case "rq":
 			return .rq
 		case "srx":
@@ -230,6 +276,8 @@ public class Mime {
 			return .ssml
 		case "tei":
 			return .tei
+		case "teicorpus":
+			return .teicorpus
 		case "tfi":
 			return .tfi
 		case "tsd":
@@ -252,12 +300,16 @@ public class Mime {
 			return .acu
 		case "atc":
 			return .atc
+		case "acutc":
+			return .acutc
 		case "air":
 			return .air
 		case "fcdt":
 			return .fcdt
 		case "fxp":
 			return .fxp
+		case "fxpl":
+			return .fxpl
 		case "xdp":
 			return .xdp
 		case "xfdf":
@@ -310,6 +362,14 @@ public class Mime {
 			return .rp9
 		case "c4g":
 			return .c4g
+		case "c4d":
+			return .c4d
+		case "c4f":
+			return .c4f
+		case "c4p":
+			return .c4p
+		case "c4u":
+			return .c4u
 		case "c11amc":
 			return .c11amc
 		case "c11amz":
@@ -346,12 +406,24 @@ public class Mime {
 			return .rdz
 		case "uvf":
 			return .uvf
+		case "uvvf":
+			return .uvvf
+		case "uvd":
+			return .uvd
+		case "uvvd":
+			return .uvvd
 		case "uvt":
 			return .uvt
+		case "uvvt":
+			return .uvvt
 		case "uvx":
 			return .uvx
+		case "uvvx":
+			return .uvvx
 		case "uvz":
 			return .uvz
+		case "uvvz":
+			return .uvvz
 		case "fe_launch":
 			return .fe_launch
 		case "dna":
@@ -386,6 +458,8 @@ public class Mime {
 			return .ssf
 		case "es3":
 			return .es3
+		case "et3":
+			return .et3
 		case "ez2":
 			return .ez2
 		case "ez3":
@@ -396,12 +470,20 @@ public class Mime {
 			return .mseed
 		case "seed":
 			return .seed
+		case "dataless":
+			return .dataless
 		case "gph":
 			return .gph
 		case "ftc":
 			return .ftc
 		case "fm":
 			return .fm
+		case "frame":
+			return .frame
+		case "maker":
+			return .maker
+		case "book":
+			return .book
 		case "fnc":
 			return .fnc
 		case "ltf":
@@ -434,6 +516,8 @@ public class Mime {
 			return .ggt
 		case "gex":
 			return .gex
+		case "gre":
+			return .gre
 		case "gxt":
 			return .gxt
 		case "g2w":
@@ -448,6 +532,8 @@ public class Mime {
 			return .kmz
 		case "gqf":
 			return .gqf
+		case "gqs":
+			return .gqs
 		case "gac":
 			return .gac
 		case "ghf":
@@ -488,12 +574,18 @@ public class Mime {
 			return .mpy
 		case "afp":
 			return .afp
+		case "listafp":
+			return .listafp
+		case "list3820":
+			return .list3820
 		case "irm":
 			return .irm
 		case "sc":
 			return .sc
 		case "icc":
 			return .icc
+		case "icm":
+			return .icm
 		case "igl":
 			return .igl
 		case "ivp":
@@ -504,6 +596,8 @@ public class Mime {
 			return .igm
 		case "xpw":
 			return .xpw
+		case "xpx":
+			return .xpx
 		case "i2g":
 			return .i2g
 		case "qbo":
@@ -528,6 +622,8 @@ public class Mime {
 			return .joda
 		case "ktz":
 			return .ktz
+		case "ktr":
+			return .ktr
 		case "karbon":
 			return .karbon
 		case "chrt":
@@ -540,18 +636,30 @@ public class Mime {
 			return .kon
 		case "kpr":
 			return .kpr
+		case "kpt":
+			return .kpt
 		case "ksp":
 			return .ksp
 		case "kwd":
 			return .kwd
+		case "kwt":
+			return .kwt
 		case "htke":
 			return .htke
 		case "kia":
 			return .kia
 		case "kne":
 			return .kne
+		case "knp":
+			return .knp
 		case "skp":
 			return .skp
+		case "skd":
+			return .skd
+		case "skt":
+			return .skt
+		case "skm":
+			return .skm
 		case "sse":
 			return .sse
 		case "lasxml":
@@ -618,6 +726,16 @@ public class Mime {
 			return .cab
 		case "xls":
 			return .xls
+		case "xlm":
+			return .xlm
+		case "xla":
+			return .xla
+		case "xlc":
+			return .xlc
+		case "xlt":
+			return .xlt
+		case "xlw":
+			return .xlw
 		case "xlam":
 			return .xlam
 		case "xlsb":
@@ -642,6 +760,10 @@ public class Mime {
 			return .stl
 		case "ppt":
 			return .ppt
+		case "pps":
+			return .pps
+		case "pot":
+			return .pot
 		case "ppam":
 			return .ppam
 		case "pptm":
@@ -654,12 +776,20 @@ public class Mime {
 			return .potm
 		case "mpp":
 			return .mpp
+		case "mpt":
+			return .mpt
 		case "docm":
 			return .docm
 		case "dotm":
 			return .dotm
 		case "wps":
 			return .wps
+		case "wks":
+			return .wks
+		case "wcm":
+			return .wcm
+		case "wdb":
+			return .wdb
 		case "wpl":
 			return .wpl
 		case "xps":
@@ -676,6 +806,8 @@ public class Mime {
 			return .nlu
 		case "ntf":
 			return .ntf
+		case "nitf":
+			return .nitf
 		case "nnd":
 			return .nnd
 		case "nns":
@@ -760,6 +892,10 @@ public class Mime {
 			return .esa
 		case "pdb":
 			return .pdb
+		case "pqa":
+			return .pqa
+		case "oprc":
+			return .oprc
 		case "paw":
 			return .paw
 		case "str":
@@ -784,6 +920,16 @@ public class Mime {
 			return .ptid
 		case "qxd":
 			return .qxd
+		case "qxt":
+			return .qxt
+		case "qwd":
+			return .qwd
+		case "qwt":
+			return .qwt
+		case "qxl":
+			return .qxl
+		case "qxb":
+			return .qxb
 		case "bed":
 			return .bed
 		case "mxl":
@@ -820,12 +966,16 @@ public class Mime {
 			return .ipk
 		case "twd":
 			return .twd
+		case "twds":
+			return .twds
 		case "mmf":
 			return .mmf
 		case "teacher":
 			return .teacher
 		case "sdkm":
 			return .sdkm
+		case "sdkd":
+			return .sdkd
 		case "dxp":
 			return .dxp
 		case "sfs":
@@ -840,6 +990,8 @@ public class Mime {
 			return .smf
 		case "sdw":
 			return .sdw
+		case "vor":
+			return .vor
 		case "sgl":
 			return .sgl
 		case "smzip":
@@ -868,10 +1020,14 @@ public class Mime {
 			return .stw
 		case "sus":
 			return .sus
+		case "susp":
+			return .susp
 		case "svd":
 			return .svd
 		case "sis":
 			return .sis
+		case "sisx":
+			return .sisx
 		case "xsm":
 			return .xsm
 		case "bdm":
@@ -882,6 +1038,10 @@ public class Mime {
 			return .tao
 		case "pcap":
 			return .pcap
+		case "cap":
+			return .cap
+		case "dmp":
+			return .dmp
 		case "tmo":
 			return .tmo
 		case "tpt":
@@ -892,6 +1052,8 @@ public class Mime {
 			return .tra
 		case "ufd":
 			return .ufd
+		case "ufdl":
+			return .ufdl
 		case "utz":
 			return .utz
 		case "umj":
@@ -904,6 +1066,12 @@ public class Mime {
 			return .vcx
 		case "vsd":
 			return .vsd
+		case "vst":
+			return .vst
+		case "vss":
+			return .vss
+		case "vsw":
+			return .vsw
 		case "vis":
 			return .vis
 		case "vsf":
@@ -946,6 +1114,8 @@ public class Mime {
 			return .cmp
 		case "zir":
 			return .zir
+		case "zirz":
+			return .zirz
 		case "zaz":
 			return .zaz
 		case "vxml":
@@ -968,6 +1138,12 @@ public class Mime {
 			return .dmg
 		case "aab":
 			return .aab
+		case "x32":
+			return .x32
+		case "u32":
+			return .u32
+		case "vox":
+			return .vox
 		case "aam":
 			return .aam
 		case "aas":
@@ -978,12 +1154,24 @@ public class Mime {
 			return .torrent
 		case "blb":
 			return .blb
+		case "blorb":
+			return .blorb
 		case "bz":
 			return .bz
 		case "bz2":
 			return .bz2
+		case "boz":
+			return .boz
 		case "cbr":
 			return .cbr
+		case "cba":
+			return .cba
+		case "cbt":
+			return .cbt
+		case "cbz":
+			return .cbz
+		case "cb7":
+			return .cb7
 		case "vcd":
 			return .vcd
 		case "cfs":
@@ -1000,10 +1188,28 @@ public class Mime {
 			return .csh
 		case "deb":
 			return .deb
+		case "udeb":
+			return .udeb
 		case "dgc":
 			return .dgc
 		case "dir":
 			return .dir
+		case "dcr":
+			return .dcr
+		case "dxr":
+			return .dxr
+		case "cst":
+			return .cst
+		case "cct":
+			return .cct
+		case "cxt":
+			return .cxt
+		case "w3d":
+			return .w3d
+		case "fgd":
+			return .fgd
+		case "swa":
+			return .swa
 		case "wad":
 			return .wad
 		case "ncx":
@@ -1024,16 +1230,18 @@ public class Mime {
 			return .gsf
 		case "psf":
 			return .psf
-		case "otf":
-			return .otf
 		case "pcf":
 			return .pcf
 		case "snf":
 			return .snf
-		case "ttf":
-			return .ttf
 		case "pfa":
 			return .pfa
+		case "pfb":
+			return .pfb
+		case "pfm":
+			return .pfm
+		case "afm":
+			return .afm
 		case "arc":
 			return .arc
 		case "spl":
@@ -1060,10 +1268,14 @@ public class Mime {
 			return .latex
 		case "lzh":
 			return .lzh
+		case "lha":
+			return .lha
 		case "mie":
 			return .mie
 		case "prc":
 			return .prc
+		case "mobi":
+			return .mobi
 		case "application":
 			return .application
 		case "lnk":
@@ -1084,10 +1296,26 @@ public class Mime {
 			return .clp
 		case "exe":
 			return .exe
+		case "dll":
+			return .dll
+		case "com":
+			return .com
+		case "bat":
+			return .bat
+		case "msi":
+			return .msi
 		case "mvb":
 			return .mvb
+		case "m13":
+			return .m13
+		case "m14":
+			return .m14
 		case "wmf":
 			return .wmf
+		case "emf":
+			return .emf
+		case "emz":
+			return .emz
 		case "mny":
 			return .mny
 		case "pub":
@@ -1100,12 +1328,18 @@ public class Mime {
 			return .wri
 		case "nc":
 			return .nc
+		case "cdf":
+			return .cdf
 		case "nzb":
 			return .nzb
 		case "p12":
 			return .p12
+		case "pfx":
+			return .pfx
 		case "p7b":
 			return .p7b
+		case "spc":
+			return .spc
 		case "p7r":
 			return .p7r
 		case "rar":
@@ -1146,6 +1380,8 @@ public class Mime {
 			return .tfm
 		case "texinfo":
 			return .texinfo
+		case "texi":
+			return .texi
 		case "obj":
 			return .obj
 		case "ustar":
@@ -1154,6 +1390,8 @@ public class Mime {
 			return .src
 		case "der":
 			return .der
+		case "crt":
+			return .crt
 		case "fig":
 			return .fig
 		case "xlf":
@@ -1164,6 +1402,20 @@ public class Mime {
 			return .xz
 		case "z1":
 			return .z1
+		case "z2":
+			return .z2
+		case "z3":
+			return .z3
+		case "z4":
+			return .z4
+		case "z5":
+			return .z5
+		case "z6":
+			return .z6
+		case "z7":
+			return .z7
+		case "z8":
+			return .z8
 		case "xaml":
 			return .xaml
 		case "xdf":
@@ -1172,8 +1424,12 @@ public class Mime {
 			return .xenc
 		case "xhtml":
 			return .xhtml
+		case "xht":
+			return .xht
 		case "xml":
 			return .xml
+		case "xsl":
+			return .xsl
 		case "dtd":
 			return .dtd
 		case "xop":
@@ -1186,6 +1442,12 @@ public class Mime {
 			return .xspf
 		case "mxml":
 			return .mxml
+		case "xhvml":
+			return .xhvml
+		case "xvml":
+			return .xvml
+		case "xvm":
+			return .xvm
 		case "yang":
 			return .yang
 		case "yin":
@@ -1196,20 +1458,46 @@ public class Mime {
 			return .adp
 		case "au":
 			return .au
+		case "snd":
+			return .snd
 		case "mid":
 			return .mid
+		case "midi":
+			return .midi
+		case "kar":
+			return .kar
+		case "rmi":
+			return .rmi
 		case "m4a":
 			return .m4a
+		case "mp4a":
+			return .mp4a
 		case "mpga":
 			return .mpga
+		case "mp2":
+			return .mp2
+		case "mp2a":
+			return .mp2a
+		case "mp3":
+			return .mp3
+		case "m2a":
+			return .m2a
+		case "m3a":
+			return .m3a
 		case "oga":
 			return .oga
+		case "ogg":
+			return .ogg
+		case "spx":
+			return .spx
 		case "s3m":
 			return .s3m
 		case "sil":
 			return .sil
 		case "uva":
 			return .uva
+		case "uvva":
+			return .uvva
 		case "eol":
 			return .eol
 		case "dra":
@@ -1236,6 +1524,10 @@ public class Mime {
 			return .aac
 		case "aif":
 			return .aif
+		case "aiff":
+			return .aiff
+		case "aifc":
+			return .aifc
 		case "caf":
 			return .caf
 		case "flac":
@@ -1250,6 +1542,8 @@ public class Mime {
 			return .wma
 		case "ram":
 			return .ram
+		case "ra":
+			return .ra
 		case "rmp":
 			return .rmp
 		case "wav":
@@ -1268,6 +1562,16 @@ public class Mime {
 			return .csml
 		case "xyz":
 			return .xyz
+		case "ttc":
+			return .ttc
+		case "otf":
+			return .otf
+		case "ttf":
+			return .ttf
+		case "woff":
+			return .woff
+		case "woff2":
+			return .woff2
 		case "bmp":
 			return .bmp
 		case "cgm":
@@ -1280,6 +1584,10 @@ public class Mime {
 			return .ief
 		case "jpeg":
 			return .jpeg
+		case "jpg":
+			return .jpg
+		case "jpe":
+			return .jpe
 		case "ktx":
 			return .ktx
 		case "png":
@@ -1290,14 +1598,26 @@ public class Mime {
 			return .sgi
 		case "svg":
 			return .svg
+		case "svgz":
+			return .svgz
 		case "tiff":
 			return .tiff
+		case "tif":
+			return .tif
 		case "psd":
 			return .psd
 		case "uvi":
 			return .uvi
+		case "uvvi":
+			return .uvvi
+		case "uvg":
+			return .uvg
+		case "uvvg":
+			return .uvvg
 		case "djvu":
 			return .djvu
+		case "djv":
+			return .djv
 		case "sub":
 			return .sub
 		case "dwg":
@@ -1334,6 +1654,14 @@ public class Mime {
 			return .cmx
 		case "fh":
 			return .fh
+		case "fhc":
+			return .fhc
+		case "fh4":
+			return .fh4
+		case "fh5":
+			return .fh5
+		case "fh7":
+			return .fh7
 		case "ico":
 			return .ico
 		case "sid":
@@ -1342,6 +1670,8 @@ public class Mime {
 			return .pcx
 		case "pic":
 			return .pic
+		case "pct":
+			return .pct
 		case "pnm":
 			return .pnm
 		case "pbm":
@@ -1362,10 +1692,18 @@ public class Mime {
 			return .xwd
 		case "eml":
 			return .eml
+		case "mime":
+			return .mime
 		case "igs":
 			return .igs
+		case "iges":
+			return .iges
 		case "msh":
 			return .msh
+		case "mesh":
+			return .mesh
+		case "silo":
+			return .silo
 		case "dae":
 			return .dae
 		case "dwf":
@@ -1380,40 +1718,80 @@ public class Mime {
 			return .vtu
 		case "wrl":
 			return .wrl
+		case "vrml":
+			return .vrml
 		case "x3db":
 			return .x3db
+		case "x3dbz":
+			return .x3dbz
 		case "x3dv":
 			return .x3dv
+		case "x3dvz":
+			return .x3dvz
 		case "x3d":
 			return .x3d
+		case "x3dz":
+			return .x3dz
 		case "appcache":
 			return .appcache
 		case "ics":
 			return .ics
+		case "ifb":
+			return .ifb
 		case "css":
 			return .css
 		case "csv":
 			return .csv
 		case "html":
 			return .html
+		case "htm":
+			return .htm
 		case "n3":
 			return .n3
 		case "txt":
 			return .txt
+		case "text":
+			return .text
+		case "conf":
+			return .conf
+		case "def":
+			return .def
+		case "list":
+			return .list
+		case "log":
+			return .log
+		case "in":
+			return .in
 		case "dsc":
 			return .dsc
 		case "rtx":
 			return .rtx
 		case "sgml":
 			return .sgml
+		case "sgm":
+			return .sgm
 		case "tsv":
 			return .tsv
 		case "t":
 			return .t
+		case "tr":
+			return .tr
+		case "roff":
+			return .roff
+		case "man":
+			return .man
+		case "me":
+			return .me
+		case "ms":
+			return .ms
 		case "ttl":
 			return .ttl
 		case "uri":
 			return .uri
+		case "uris":
+			return .uris
+		case "urls":
+			return .urls
 		case "vcard":
 			return .vcard
 		case "curl":
@@ -1442,10 +1820,30 @@ public class Mime {
 			return .wmls
 		case "s":
 			return .s
+		case "asm":
+			return .asm
 		case "c":
 			return .c
+		case "cc":
+			return .cc
+		case "cxx":
+			return .cxx
+		case "cpp":
+			return .cpp
+		case "h":
+			return .h
+		case "hh":
+			return .hh
+		case "dic":
+			return .dic
 		case "f":
 			return .f
+		case "for":
+			return .for
+		case "f77":
+			return .f77
+		case "f90":
+			return .f90
 		case "java":
 			return .java
 		case "nfo":
@@ -1454,6 +1852,8 @@ public class Mime {
 			return .opml
 		case "p":
 			return .p
+		case "pas":
+			return .pas
 		case "etx":
 			return .etx
 		case "sfv":
@@ -1478,36 +1878,68 @@ public class Mime {
 			return .jpgv
 		case "jpm":
 			return .jpm
+		case "jpgm":
+			return .jpgm
 		case "mj2":
 			return .mj2
+		case "mjp2":
+			return .mjp2
 		case "mp4":
 			return .mp4
+		case "mp4v":
+			return .mp4v
+		case "mpg4":
+			return .mpg4
 		case "mpeg":
 			return .mpeg
+		case "mpg":
+			return .mpg
+		case "mpe":
+			return .mpe
+		case "m1v":
+			return .m1v
+		case "m2v":
+			return .m2v
 		case "ogv":
 			return .ogv
 		case "qt":
 			return .qt
+		case "mov":
+			return .mov
 		case "uvh":
 			return .uvh
+		case "uvvh":
+			return .uvvh
 		case "uvm":
 			return .uvm
+		case "uvvm":
+			return .uvvm
 		case "uvp":
 			return .uvp
+		case "uvvp":
+			return .uvvp
 		case "uvs":
 			return .uvs
+		case "uvvs":
+			return .uvvs
 		case "uvv":
 			return .uvv
+		case "uvvv":
+			return .uvvv
 		case "dvb":
 			return .dvb
 		case "fvt":
 			return .fvt
 		case "mxu":
 			return .mxu
+		case "m4u":
+			return .m4u
 		case "pyv":
 			return .pyv
 		case "uvu":
 			return .uvu
+		case "uvvu":
+			return .uvvu
 		case "viv":
 			return .viv
 		case "webm":
@@ -1522,10 +1954,16 @@ public class Mime {
 			return .m4v
 		case "mkv":
 			return .mkv
+		case "mk3d":
+			return .mk3d
+		case "mks":
+			return .mks
 		case "mng":
 			return .mng
 		case "asf":
 			return .asf
+		case "asx":
+			return .asx
 		case "vob":
 			return .vob
 		case "wm":
@@ -1593,8 +2031,6 @@ public class Mime {
 			return "exi"
 		case "application/font-tdpfr":
 			return "pfr"
-		case "application/font-woff":
-			return "woff"
 		case "application/gml+xml":
 			return "gml"
 		case "application/gpx+xml":
@@ -1605,6 +2041,8 @@ public class Mime {
 			return "stk"
 		case "application/inkml+xml":
 			return "ink"
+		case "application/inkml+xml":
+			return "inkml"
 		case "application/ipfix":
 			return "ipfix"
 		case "application/java-archive":
@@ -1633,6 +2071,10 @@ public class Mime {
 			return "mrcx"
 		case "application/mathematica":
 			return "ma"
+		case "application/mathematica":
+			return "nb"
+		case "application/mathematica":
+			return "mb"
 		case "application/mathml+xml":
 			return "mathml"
 		case "application/mbox":
@@ -1649,14 +2091,40 @@ public class Mime {
 			return "mods"
 		case "application/mp21":
 			return "m21"
+		case "application/mp21":
+			return "mp21"
 		case "application/mp4":
 			return "mp4s"
 		case "application/msword":
 			return "doc"
+		case "application/msword":
+			return "dot"
 		case "application/mxf":
 			return "mxf"
 		case "application/octet-stream":
 			return "bin"
+		case "application/octet-stream":
+			return "dms"
+		case "application/octet-stream":
+			return "lrf"
+		case "application/octet-stream":
+			return "mar"
+		case "application/octet-stream":
+			return "so"
+		case "application/octet-stream":
+			return "dist"
+		case "application/octet-stream":
+			return "distz"
+		case "application/octet-stream":
+			return "pkg"
+		case "application/octet-stream":
+			return "bpk"
+		case "application/octet-stream":
+			return "dump"
+		case "application/octet-stream":
+			return "elc"
+		case "application/octet-stream":
+			return "deploy"
 		case "application/oda":
 			return "oda"
 		case "application/oebps-package+xml":
@@ -1667,6 +2135,12 @@ public class Mime {
 			return "omdoc"
 		case "application/onenote":
 			return "onetoc"
+		case "application/onenote":
+			return "onetoc2"
+		case "application/onenote":
+			return "onetmp"
+		case "application/onenote":
+			return "onepkg"
 		case "application/oxps":
 			return "oxps"
 		case "application/patch-ops-error+xml":
@@ -1677,12 +2151,16 @@ public class Mime {
 			return "pgp"
 		case "application/pgp-signature":
 			return "asc"
+		case "application/pgp-signature":
+			return "sig"
 		case "application/pics-rules":
 			return "prf"
 		case "application/pkcs10":
 			return "p10"
 		case "application/pkcs7-mime":
 			return "p7m"
+		case "application/pkcs7-mime":
+			return "p7c"
 		case "application/pkcs7-signature":
 			return "p7s"
 		case "application/pkcs8":
@@ -1701,6 +2179,10 @@ public class Mime {
 			return "pls"
 		case "application/postscript":
 			return "ai"
+		case "application/postscript":
+			return "eps"
+		case "application/postscript":
+			return "ps"
 		case "application/prs.cww":
 			return "cww"
 		case "application/pskc+xml":
@@ -1749,6 +2231,8 @@ public class Mime {
 			return "shf"
 		case "application/smil+xml":
 			return "smi"
+		case "application/smil+xml":
+			return "smil"
 		case "application/sparql-query":
 			return "rq"
 		case "application/sparql-results+xml":
@@ -1765,6 +2249,8 @@ public class Mime {
 			return "ssml"
 		case "application/tei+xml":
 			return "tei"
+		case "application/tei+xml":
+			return "teicorpus"
 		case "application/thraud+xml":
 			return "tfi"
 		case "application/timestamped-data":
@@ -1787,12 +2273,16 @@ public class Mime {
 			return "acu"
 		case "application/vnd.acucorp":
 			return "atc"
+		case "application/vnd.acucorp":
+			return "acutc"
 		case "application/vnd.adobe.air-application-installer-package+zip":
 			return "air"
 		case "application/vnd.adobe.formscentral.fcdt":
 			return "fcdt"
 		case "application/vnd.adobe.fxp":
 			return "fxp"
+		case "application/vnd.adobe.fxp":
+			return "fxpl"
 		case "application/vnd.adobe.xdp+xml":
 			return "xdp"
 		case "application/vnd.adobe.xfdf":
@@ -1845,6 +2335,14 @@ public class Mime {
 			return "rp9"
 		case "application/vnd.clonk.c4group":
 			return "c4g"
+		case "application/vnd.clonk.c4group":
+			return "c4d"
+		case "application/vnd.clonk.c4group":
+			return "c4f"
+		case "application/vnd.clonk.c4group":
+			return "c4p"
+		case "application/vnd.clonk.c4group":
+			return "c4u"
 		case "application/vnd.cluetrust.cartomobile-config":
 			return "c11amc"
 		case "application/vnd.cluetrust.cartomobile-config-pkg":
@@ -1881,12 +2379,24 @@ public class Mime {
 			return "rdz"
 		case "application/vnd.dece.data":
 			return "uvf"
+		case "application/vnd.dece.data":
+			return "uvvf"
+		case "application/vnd.dece.data":
+			return "uvd"
+		case "application/vnd.dece.data":
+			return "uvvd"
 		case "application/vnd.dece.ttml+xml":
 			return "uvt"
+		case "application/vnd.dece.ttml+xml":
+			return "uvvt"
 		case "application/vnd.dece.unspecified":
 			return "uvx"
+		case "application/vnd.dece.unspecified":
+			return "uvvx"
 		case "application/vnd.dece.zip":
 			return "uvz"
+		case "application/vnd.dece.zip":
+			return "uvvz"
 		case "application/vnd.denovo.fcselayout-link":
 			return "fe_launch"
 		case "application/vnd.dna":
@@ -1921,6 +2431,8 @@ public class Mime {
 			return "ssf"
 		case "application/vnd.eszigno3+xml":
 			return "es3"
+		case "application/vnd.eszigno3+xml":
+			return "et3"
 		case "application/vnd.ezpix-album":
 			return "ez2"
 		case "application/vnd.ezpix-package":
@@ -1931,12 +2443,20 @@ public class Mime {
 			return "mseed"
 		case "application/vnd.fdsn.seed":
 			return "seed"
+		case "application/vnd.fdsn.seed":
+			return "dataless"
 		case "application/vnd.flographit":
 			return "gph"
 		case "application/vnd.fluxtime.clip":
 			return "ftc"
 		case "application/vnd.framemaker":
 			return "fm"
+		case "application/vnd.framemaker":
+			return "frame"
+		case "application/vnd.framemaker":
+			return "maker"
+		case "application/vnd.framemaker":
+			return "book"
 		case "application/vnd.frogans.fnc":
 			return "fnc"
 		case "application/vnd.frogans.ltf":
@@ -1969,6 +2489,8 @@ public class Mime {
 			return "ggt"
 		case "application/vnd.geometry-explorer":
 			return "gex"
+		case "application/vnd.geometry-explorer":
+			return "gre"
 		case "application/vnd.geonext":
 			return "gxt"
 		case "application/vnd.geoplan":
@@ -1983,6 +2505,8 @@ public class Mime {
 			return "kmz"
 		case "application/vnd.grafeq":
 			return "gqf"
+		case "application/vnd.grafeq":
+			return "gqs"
 		case "application/vnd.groove-account":
 			return "gac"
 		case "application/vnd.groove-help":
@@ -2023,12 +2547,18 @@ public class Mime {
 			return "mpy"
 		case "application/vnd.ibm.modcap":
 			return "afp"
+		case "application/vnd.ibm.modcap":
+			return "listafp"
+		case "application/vnd.ibm.modcap":
+			return "list3820"
 		case "application/vnd.ibm.rights-management":
 			return "irm"
 		case "application/vnd.ibm.secure-container":
 			return "sc"
 		case "application/vnd.iccprofile":
 			return "icc"
+		case "application/vnd.iccprofile":
+			return "icm"
 		case "application/vnd.igloader":
 			return "igl"
 		case "application/vnd.immervision-ivp":
@@ -2039,6 +2569,8 @@ public class Mime {
 			return "igm"
 		case "application/vnd.intercon.formnet":
 			return "xpw"
+		case "application/vnd.intercon.formnet":
+			return "xpx"
 		case "application/vnd.intergeo":
 			return "i2g"
 		case "application/vnd.intu.qbo":
@@ -2063,6 +2595,8 @@ public class Mime {
 			return "joda"
 		case "application/vnd.kahootz":
 			return "ktz"
+		case "application/vnd.kahootz":
+			return "ktr"
 		case "application/vnd.kde.karbon":
 			return "karbon"
 		case "application/vnd.kde.kchart":
@@ -2075,18 +2609,30 @@ public class Mime {
 			return "kon"
 		case "application/vnd.kde.kpresenter":
 			return "kpr"
+		case "application/vnd.kde.kpresenter":
+			return "kpt"
 		case "application/vnd.kde.kspread":
 			return "ksp"
 		case "application/vnd.kde.kword":
 			return "kwd"
+		case "application/vnd.kde.kword":
+			return "kwt"
 		case "application/vnd.kenameaapp":
 			return "htke"
 		case "application/vnd.kidspiration":
 			return "kia"
 		case "application/vnd.kinar":
 			return "kne"
+		case "application/vnd.kinar":
+			return "knp"
 		case "application/vnd.koan":
 			return "skp"
+		case "application/vnd.koan":
+			return "skd"
+		case "application/vnd.koan":
+			return "skt"
+		case "application/vnd.koan":
+			return "skm"
 		case "application/vnd.kodak-descriptor":
 			return "sse"
 		case "application/vnd.las.las+xml":
@@ -2153,6 +2699,16 @@ public class Mime {
 			return "cab"
 		case "application/vnd.ms-excel":
 			return "xls"
+		case "application/vnd.ms-excel":
+			return "xlm"
+		case "application/vnd.ms-excel":
+			return "xla"
+		case "application/vnd.ms-excel":
+			return "xlc"
+		case "application/vnd.ms-excel":
+			return "xlt"
+		case "application/vnd.ms-excel":
+			return "xlw"
 		case "application/vnd.ms-excel.addin.macroenabled.12":
 			return "xlam"
 		case "application/vnd.ms-excel.sheet.binary.macroenabled.12":
@@ -2177,6 +2733,10 @@ public class Mime {
 			return "stl"
 		case "application/vnd.ms-powerpoint":
 			return "ppt"
+		case "application/vnd.ms-powerpoint":
+			return "pps"
+		case "application/vnd.ms-powerpoint":
+			return "pot"
 		case "application/vnd.ms-powerpoint.addin.macroenabled.12":
 			return "ppam"
 		case "application/vnd.ms-powerpoint.presentation.macroenabled.12":
@@ -2189,12 +2749,20 @@ public class Mime {
 			return "potm"
 		case "application/vnd.ms-project":
 			return "mpp"
+		case "application/vnd.ms-project":
+			return "mpt"
 		case "application/vnd.ms-word.document.macroenabled.12":
 			return "docm"
 		case "application/vnd.ms-word.template.macroenabled.12":
 			return "dotm"
 		case "application/vnd.ms-works":
 			return "wps"
+		case "application/vnd.ms-works":
+			return "wks"
+		case "application/vnd.ms-works":
+			return "wcm"
+		case "application/vnd.ms-works":
+			return "wdb"
 		case "application/vnd.ms-wpl":
 			return "wpl"
 		case "application/vnd.ms-xpsdocument":
@@ -2211,6 +2779,8 @@ public class Mime {
 			return "nlu"
 		case "application/vnd.nitf":
 			return "ntf"
+		case "application/vnd.nitf":
+			return "nitf"
 		case "application/vnd.noblenet-directory":
 			return "nnd"
 		case "application/vnd.noblenet-sealer":
@@ -2295,6 +2865,10 @@ public class Mime {
 			return "esa"
 		case "application/vnd.palm":
 			return "pdb"
+		case "application/vnd.palm":
+			return "pqa"
+		case "application/vnd.palm":
+			return "oprc"
 		case "application/vnd.pawaafile":
 			return "paw"
 		case "application/vnd.pg.format":
@@ -2319,6 +2893,16 @@ public class Mime {
 			return "ptid"
 		case "application/vnd.quark.quarkxpress":
 			return "qxd"
+		case "application/vnd.quark.quarkxpress":
+			return "qxt"
+		case "application/vnd.quark.quarkxpress":
+			return "qwd"
+		case "application/vnd.quark.quarkxpress":
+			return "qwt"
+		case "application/vnd.quark.quarkxpress":
+			return "qxl"
+		case "application/vnd.quark.quarkxpress":
+			return "qxb"
 		case "application/vnd.realvnc.bed":
 			return "bed"
 		case "application/vnd.recordare.musicxml":
@@ -2355,12 +2939,16 @@ public class Mime {
 			return "ipk"
 		case "application/vnd.simtech-mindmapper":
 			return "twd"
+		case "application/vnd.simtech-mindmapper":
+			return "twds"
 		case "application/vnd.smaf":
 			return "mmf"
 		case "application/vnd.smart.teacher":
 			return "teacher"
 		case "application/vnd.solent.sdkm+xml":
 			return "sdkm"
+		case "application/vnd.solent.sdkm+xml":
+			return "sdkd"
 		case "application/vnd.spotfire.dxp":
 			return "dxp"
 		case "application/vnd.spotfire.sfs":
@@ -2375,6 +2963,8 @@ public class Mime {
 			return "smf"
 		case "application/vnd.stardivision.writer":
 			return "sdw"
+		case "application/vnd.stardivision.writer":
+			return "vor"
 		case "application/vnd.stardivision.writer-global":
 			return "sgl"
 		case "application/vnd.stepmania.package":
@@ -2403,10 +2993,14 @@ public class Mime {
 			return "stw"
 		case "application/vnd.sus-calendar":
 			return "sus"
+		case "application/vnd.sus-calendar":
+			return "susp"
 		case "application/vnd.svd":
 			return "svd"
 		case "application/vnd.symbian.install":
 			return "sis"
+		case "application/vnd.symbian.install":
+			return "sisx"
 		case "application/vnd.syncml+xml":
 			return "xsm"
 		case "application/vnd.syncml.dm+wbxml":
@@ -2417,6 +3011,10 @@ public class Mime {
 			return "tao"
 		case "application/vnd.tcpdump.pcap":
 			return "pcap"
+		case "application/vnd.tcpdump.pcap":
+			return "cap"
+		case "application/vnd.tcpdump.pcap":
+			return "dmp"
 		case "application/vnd.tmobile-livetv":
 			return "tmo"
 		case "application/vnd.trid.tpt":
@@ -2427,6 +3025,8 @@ public class Mime {
 			return "tra"
 		case "application/vnd.ufdl":
 			return "ufd"
+		case "application/vnd.ufdl":
+			return "ufdl"
 		case "application/vnd.uiq.theme":
 			return "utz"
 		case "application/vnd.umajin":
@@ -2439,6 +3039,12 @@ public class Mime {
 			return "vcx"
 		case "application/vnd.visio":
 			return "vsd"
+		case "application/vnd.visio":
+			return "vst"
+		case "application/vnd.visio":
+			return "vss"
+		case "application/vnd.visio":
+			return "vsw"
 		case "application/vnd.visionary":
 			return "vis"
 		case "application/vnd.vsf":
@@ -2481,6 +3087,8 @@ public class Mime {
 			return "cmp"
 		case "application/vnd.zul":
 			return "zir"
+		case "application/vnd.zul":
+			return "zirz"
 		case "application/vnd.zzazz.deck+xml":
 			return "zaz"
 		case "application/voicexml+xml":
@@ -2503,6 +3111,12 @@ public class Mime {
 			return "dmg"
 		case "application/x-authorware-bin":
 			return "aab"
+		case "application/x-authorware-bin":
+			return "x32"
+		case "application/x-authorware-bin":
+			return "u32"
+		case "application/x-authorware-bin":
+			return "vox"
 		case "application/x-authorware-map":
 			return "aam"
 		case "application/x-authorware-seg":
@@ -2513,12 +3127,24 @@ public class Mime {
 			return "torrent"
 		case "application/x-blorb":
 			return "blb"
+		case "application/x-blorb":
+			return "blorb"
 		case "application/x-bzip":
 			return "bz"
 		case "application/x-bzip2":
 			return "bz2"
+		case "application/x-bzip2":
+			return "boz"
 		case "application/x-cbr":
 			return "cbr"
+		case "application/x-cbr":
+			return "cba"
+		case "application/x-cbr":
+			return "cbt"
+		case "application/x-cbr":
+			return "cbz"
+		case "application/x-cbr":
+			return "cb7"
 		case "application/x-cdlink":
 			return "vcd"
 		case "application/x-cfs-compressed":
@@ -2535,10 +3161,28 @@ public class Mime {
 			return "csh"
 		case "application/x-debian-package":
 			return "deb"
+		case "application/x-debian-package":
+			return "udeb"
 		case "application/x-dgc-compressed":
 			return "dgc"
 		case "application/x-director":
 			return "dir"
+		case "application/x-director":
+			return "dcr"
+		case "application/x-director":
+			return "dxr"
+		case "application/x-director":
+			return "cst"
+		case "application/x-director":
+			return "cct"
+		case "application/x-director":
+			return "cxt"
+		case "application/x-director":
+			return "w3d"
+		case "application/x-director":
+			return "fgd"
+		case "application/x-director":
+			return "swa"
 		case "application/x-doom":
 			return "wad"
 		case "application/x-dtbncx+xml":
@@ -2559,16 +3203,18 @@ public class Mime {
 			return "gsf"
 		case "application/x-font-linux-psf":
 			return "psf"
-		case "application/x-font-otf":
-			return "otf"
 		case "application/x-font-pcf":
 			return "pcf"
 		case "application/x-font-snf":
 			return "snf"
-		case "application/x-font-ttf":
-			return "ttf"
 		case "application/x-font-type1":
 			return "pfa"
+		case "application/x-font-type1":
+			return "pfb"
+		case "application/x-font-type1":
+			return "pfm"
+		case "application/x-font-type1":
+			return "afm"
 		case "application/x-freearc":
 			return "arc"
 		case "application/x-futuresplash":
@@ -2595,10 +3241,14 @@ public class Mime {
 			return "latex"
 		case "application/x-lzh-compressed":
 			return "lzh"
+		case "application/x-lzh-compressed":
+			return "lha"
 		case "application/x-mie":
 			return "mie"
 		case "application/x-mobipocket-ebook":
 			return "prc"
+		case "application/x-mobipocket-ebook":
+			return "mobi"
 		case "application/x-ms-application":
 			return "application"
 		case "application/x-ms-shortcut":
@@ -2619,10 +3269,26 @@ public class Mime {
 			return "clp"
 		case "application/x-msdownload":
 			return "exe"
+		case "application/x-msdownload":
+			return "dll"
+		case "application/x-msdownload":
+			return "com"
+		case "application/x-msdownload":
+			return "bat"
+		case "application/x-msdownload":
+			return "msi"
 		case "application/x-msmediaview":
 			return "mvb"
+		case "application/x-msmediaview":
+			return "m13"
+		case "application/x-msmediaview":
+			return "m14"
 		case "application/x-msmetafile":
 			return "wmf"
+		case "application/x-msmetafile":
+			return "emf"
+		case "application/x-msmetafile":
+			return "emz"
 		case "application/x-msmoney":
 			return "mny"
 		case "application/x-mspublisher":
@@ -2635,12 +3301,18 @@ public class Mime {
 			return "wri"
 		case "application/x-netcdf":
 			return "nc"
+		case "application/x-netcdf":
+			return "cdf"
 		case "application/x-nzb":
 			return "nzb"
 		case "application/x-pkcs12":
 			return "p12"
+		case "application/x-pkcs12":
+			return "pfx"
 		case "application/x-pkcs7-certificates":
 			return "p7b"
+		case "application/x-pkcs7-certificates":
+			return "spc"
 		case "application/x-pkcs7-certreqresp":
 			return "p7r"
 		case "application/x-rar-compressed":
@@ -2681,6 +3353,8 @@ public class Mime {
 			return "tfm"
 		case "application/x-texinfo":
 			return "texinfo"
+		case "application/x-texinfo":
+			return "texi"
 		case "application/x-tgif":
 			return "obj"
 		case "application/x-ustar":
@@ -2689,6 +3363,8 @@ public class Mime {
 			return "src"
 		case "application/x-x509-ca-cert":
 			return "der"
+		case "application/x-x509-ca-cert":
+			return "crt"
 		case "application/x-xfig":
 			return "fig"
 		case "application/x-xliff+xml":
@@ -2699,6 +3375,20 @@ public class Mime {
 			return "xz"
 		case "application/x-zmachine":
 			return "z1"
+		case "application/x-zmachine":
+			return "z2"
+		case "application/x-zmachine":
+			return "z3"
+		case "application/x-zmachine":
+			return "z4"
+		case "application/x-zmachine":
+			return "z5"
+		case "application/x-zmachine":
+			return "z6"
+		case "application/x-zmachine":
+			return "z7"
+		case "application/x-zmachine":
+			return "z8"
 		case "application/xaml+xml":
 			return "xaml"
 		case "application/xcap-diff+xml":
@@ -2707,8 +3397,12 @@ public class Mime {
 			return "xenc"
 		case "application/xhtml+xml":
 			return "xhtml"
+		case "application/xhtml+xml":
+			return "xht"
 		case "application/xml":
 			return "xml"
+		case "application/xml":
+			return "xsl"
 		case "application/xml-dtd":
 			return "dtd"
 		case "application/xop+xml":
@@ -2721,6 +3415,12 @@ public class Mime {
 			return "xspf"
 		case "application/xv+xml":
 			return "mxml"
+		case "application/xv+xml":
+			return "xhvml"
+		case "application/xv+xml":
+			return "xvml"
+		case "application/xv+xml":
+			return "xvm"
 		case "application/yang":
 			return "yang"
 		case "application/yin+xml":
@@ -2731,20 +3431,46 @@ public class Mime {
 			return "adp"
 		case "audio/basic":
 			return "au"
+		case "audio/basic":
+			return "snd"
 		case "audio/midi":
 			return "mid"
+		case "audio/midi":
+			return "midi"
+		case "audio/midi":
+			return "kar"
+		case "audio/midi":
+			return "rmi"
 		case "audio/mp4":
 			return "m4a"
+		case "audio/mp4":
+			return "mp4a"
 		case "audio/mpeg":
 			return "mpga"
+		case "audio/mpeg":
+			return "mp2"
+		case "audio/mpeg":
+			return "mp2a"
+		case "audio/mpeg":
+			return "mp3"
+		case "audio/mpeg":
+			return "m2a"
+		case "audio/mpeg":
+			return "m3a"
 		case "audio/ogg":
 			return "oga"
+		case "audio/ogg":
+			return "ogg"
+		case "audio/ogg":
+			return "spx"
 		case "audio/s3m":
 			return "s3m"
 		case "audio/silk":
 			return "sil"
 		case "audio/vnd.dece.audio":
 			return "uva"
+		case "audio/vnd.dece.audio":
+			return "uvva"
 		case "audio/vnd.digital-winds":
 			return "eol"
 		case "audio/vnd.dra":
@@ -2771,6 +3497,10 @@ public class Mime {
 			return "aac"
 		case "audio/x-aiff":
 			return "aif"
+		case "audio/x-aiff":
+			return "aiff"
+		case "audio/x-aiff":
+			return "aifc"
 		case "audio/x-caf":
 			return "caf"
 		case "audio/x-flac":
@@ -2785,6 +3515,8 @@ public class Mime {
 			return "wma"
 		case "audio/x-pn-realaudio":
 			return "ram"
+		case "audio/x-pn-realaudio":
+			return "ra"
 		case "audio/x-pn-realaudio-plugin":
 			return "rmp"
 		case "audio/x-wav":
@@ -2803,6 +3535,16 @@ public class Mime {
 			return "csml"
 		case "chemical/x-xyz":
 			return "xyz"
+		case "font/collection":
+			return "ttc"
+		case "font/otf":
+			return "otf"
+		case "font/ttf":
+			return "ttf"
+		case "font/woff":
+			return "woff"
+		case "font/woff2":
+			return "woff2"
 		case "image/bmp":
 			return "bmp"
 		case "image/cgm":
@@ -2815,6 +3557,10 @@ public class Mime {
 			return "ief"
 		case "image/jpeg":
 			return "jpeg"
+		case "image/jpeg":
+			return "jpg"
+		case "image/jpeg":
+			return "jpe"
 		case "image/ktx":
 			return "ktx"
 		case "image/png":
@@ -2825,14 +3571,26 @@ public class Mime {
 			return "sgi"
 		case "image/svg+xml":
 			return "svg"
+		case "image/svg+xml":
+			return "svgz"
 		case "image/tiff":
 			return "tiff"
+		case "image/tiff":
+			return "tif"
 		case "image/vnd.adobe.photoshop":
 			return "psd"
 		case "image/vnd.dece.graphic":
 			return "uvi"
+		case "image/vnd.dece.graphic":
+			return "uvvi"
+		case "image/vnd.dece.graphic":
+			return "uvg"
+		case "image/vnd.dece.graphic":
+			return "uvvg"
 		case "image/vnd.djvu":
 			return "djvu"
+		case "image/vnd.djvu":
+			return "djv"
 		case "image/vnd.dvb.subtitle":
 			return "sub"
 		case "image/vnd.dwg":
@@ -2869,6 +3627,14 @@ public class Mime {
 			return "cmx"
 		case "image/x-freehand":
 			return "fh"
+		case "image/x-freehand":
+			return "fhc"
+		case "image/x-freehand":
+			return "fh4"
+		case "image/x-freehand":
+			return "fh5"
+		case "image/x-freehand":
+			return "fh7"
 		case "image/x-icon":
 			return "ico"
 		case "image/x-mrsid-image":
@@ -2877,6 +3643,8 @@ public class Mime {
 			return "pcx"
 		case "image/x-pict":
 			return "pic"
+		case "image/x-pict":
+			return "pct"
 		case "image/x-portable-anymap":
 			return "pnm"
 		case "image/x-portable-bitmap":
@@ -2897,10 +3665,18 @@ public class Mime {
 			return "xwd"
 		case "message/rfc822":
 			return "eml"
+		case "message/rfc822":
+			return "mime"
 		case "model/iges":
 			return "igs"
+		case "model/iges":
+			return "iges"
 		case "model/mesh":
 			return "msh"
+		case "model/mesh":
+			return "mesh"
+		case "model/mesh":
+			return "silo"
 		case "model/vnd.collada+xml":
 			return "dae"
 		case "model/vnd.dwf":
@@ -2915,40 +3691,80 @@ public class Mime {
 			return "vtu"
 		case "model/vrml":
 			return "wrl"
+		case "model/vrml":
+			return "vrml"
 		case "model/x3d+binary":
 			return "x3db"
+		case "model/x3d+binary":
+			return "x3dbz"
 		case "model/x3d+vrml":
 			return "x3dv"
+		case "model/x3d+vrml":
+			return "x3dvz"
 		case "model/x3d+xml":
 			return "x3d"
+		case "model/x3d+xml":
+			return "x3dz"
 		case "text/cache-manifest":
 			return "appcache"
 		case "text/calendar":
 			return "ics"
+		case "text/calendar":
+			return "ifb"
 		case "text/css":
 			return "css"
 		case "text/csv":
 			return "csv"
 		case "text/html":
 			return "html"
+		case "text/html":
+			return "htm"
 		case "text/n3":
 			return "n3"
 		case "text/plain":
 			return "txt"
+		case "text/plain":
+			return "text"
+		case "text/plain":
+			return "conf"
+		case "text/plain":
+			return "def"
+		case "text/plain":
+			return "list"
+		case "text/plain":
+			return "log"
+		case "text/plain":
+			return "in"
 		case "text/prs.lines.tag":
 			return "dsc"
 		case "text/richtext":
 			return "rtx"
 		case "text/sgml":
 			return "sgml"
+		case "text/sgml":
+			return "sgm"
 		case "text/tab-separated-values":
 			return "tsv"
 		case "text/troff":
 			return "t"
+		case "text/troff":
+			return "tr"
+		case "text/troff":
+			return "roff"
+		case "text/troff":
+			return "man"
+		case "text/troff":
+			return "me"
+		case "text/troff":
+			return "ms"
 		case "text/turtle":
 			return "ttl"
 		case "text/uri-list":
 			return "uri"
+		case "text/uri-list":
+			return "uris"
+		case "text/uri-list":
+			return "urls"
 		case "text/vcard":
 			return "vcard"
 		case "text/vnd.curl":
@@ -2977,10 +3793,30 @@ public class Mime {
 			return "wmls"
 		case "text/x-asm":
 			return "s"
+		case "text/x-asm":
+			return "asm"
 		case "text/x-c":
 			return "c"
+		case "text/x-c":
+			return "cc"
+		case "text/x-c":
+			return "cxx"
+		case "text/x-c":
+			return "cpp"
+		case "text/x-c":
+			return "h"
+		case "text/x-c":
+			return "hh"
+		case "text/x-c":
+			return "dic"
 		case "text/x-fortran":
 			return "f"
+		case "text/x-fortran":
+			return "for"
+		case "text/x-fortran":
+			return "f77"
+		case "text/x-fortran":
+			return "f90"
 		case "text/x-java-source":
 			return "java"
 		case "text/x-nfo":
@@ -2989,6 +3825,8 @@ public class Mime {
 			return "opml"
 		case "text/x-pascal":
 			return "p"
+		case "text/x-pascal":
+			return "pas"
 		case "text/x-setext":
 			return "etx"
 		case "text/x-sfv":
@@ -3013,36 +3851,68 @@ public class Mime {
 			return "jpgv"
 		case "video/jpm":
 			return "jpm"
+		case "video/jpm":
+			return "jpgm"
 		case "video/mj2":
 			return "mj2"
+		case "video/mj2":
+			return "mjp2"
 		case "video/mp4":
 			return "mp4"
+		case "video/mp4":
+			return "mp4v"
+		case "video/mp4":
+			return "mpg4"
 		case "video/mpeg":
 			return "mpeg"
+		case "video/mpeg":
+			return "mpg"
+		case "video/mpeg":
+			return "mpe"
+		case "video/mpeg":
+			return "m1v"
+		case "video/mpeg":
+			return "m2v"
 		case "video/ogg":
 			return "ogv"
 		case "video/quicktime":
 			return "qt"
+		case "video/quicktime":
+			return "mov"
 		case "video/vnd.dece.hd":
 			return "uvh"
+		case "video/vnd.dece.hd":
+			return "uvvh"
 		case "video/vnd.dece.mobile":
 			return "uvm"
+		case "video/vnd.dece.mobile":
+			return "uvvm"
 		case "video/vnd.dece.pd":
 			return "uvp"
+		case "video/vnd.dece.pd":
+			return "uvvp"
 		case "video/vnd.dece.sd":
 			return "uvs"
+		case "video/vnd.dece.sd":
+			return "uvvs"
 		case "video/vnd.dece.video":
 			return "uvv"
+		case "video/vnd.dece.video":
+			return "uvvv"
 		case "video/vnd.dvb.file":
 			return "dvb"
 		case "video/vnd.fvt":
 			return "fvt"
 		case "video/vnd.mpegurl":
 			return "mxu"
+		case "video/vnd.mpegurl":
+			return "m4u"
 		case "video/vnd.ms-playready.media.pyv":
 			return "pyv"
 		case "video/vnd.uvvu.mp4":
 			return "uvu"
+		case "video/vnd.uvvu.mp4":
+			return "uvvu"
 		case "video/vnd.vivo":
 			return "viv"
 		case "video/webm":
@@ -3057,10 +3927,16 @@ public class Mime {
 			return "m4v"
 		case "video/x-matroska":
 			return "mkv"
+		case "video/x-matroska":
+			return "mk3d"
+		case "video/x-matroska":
+			return "mks"
 		case "video/x-mng":
 			return "mng"
 		case "video/x-ms-asf":
 			return "asf"
+		case "video/x-ms-asf":
+			return "asx"
 		case "video/x-ms-vob":
 			return "vob"
 		case "video/x-ms-wm":
